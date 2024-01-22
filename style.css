@@ -1,0 +1,191 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 1px 1px lightgray;
+}
+
+.search {
+    margin-left: 10px;
+    width: 700px;
+    height: 40px;
+    border-radius: 30px;
+}
+.border {
+    border: 5px solid black;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.heart {
+    margin-top: 10px;
+}
+
+input {
+    border: 2px solid black;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.sign {
+    margin-top: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 120px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.bg:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(1.025);
+    transition: .5s;
+    text-decoration: bold;
+}
+
+.imgcardarea {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circle>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: 10px 10px;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.videocard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.videocard > h1 {
+    font-size: 20px;
+   
+}
+
+i{
+    margin: 0px;
+    padding: 0px;
+}
+
+.popular {
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.videocard:hover{
+    transform: scale(1.025);
+    transition: .4s;
+}
+
+body {
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    height: 220px;
+    width: 170px;
+    border-radius: 12px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.box:hover {
+    box-shadow: 0px 1px 5px lightgray;
+    transform: scale(1.025);
+    transition: .4s;
+}
+
+.box > img {
+    height: 190px;
+    border-radius: 12px;
+}
+
+.box > span {
+    margin-top: 15px;
+}
+
+@media (max-width:900px) {
+    .parent {
+        flex-direction: column ;
+        margin-right: 10px;
+    }
+
+    .box {
+        width: 100%;
+        flex-direction: row;
+        height: 80px;
+        border-color: rgba(197, 197, 197, 0.9);
+        align-items: center;
+    }
+
+    .box > img {
+        height: 100%;
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .box > span {
+        margin-top: 0px;
+        margin-left: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+
+    .popular {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .videocard {
+        align-items: center;
+        border: .25px solid lightgray;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0px 1px 5px lightgray;
+    }
+
+    .video > img {
+        border-radius: 15px;
+    }
+}
